@@ -12,13 +12,12 @@ body {
   text-transform: uppercase;
   color: white;
   text-shadow: 2px 2px 4px #000000;
-  background-image: url("img/background.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/background.png");
   background-size: 25%;
 }
 
-.background {
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
+.form-page {
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -58,6 +57,7 @@ body {
   background-size: 100% 100%;
   transition: background-image 0.5s linear;
   -webkit-transition: background-image 0.3s ease-in-out;
+  margin-bottom: 20px;
 }
 
 .iron:hover { background-image: url("img/iron_ore.png"); }
@@ -82,6 +82,8 @@ body {
   .menu-grid {
     grid-template-rows: auto auto auto;
     grid-template-columns: auto;
+    grid-gap: 0px;
+    width: 70%;
   }
   .button {
     font-size: 1em;

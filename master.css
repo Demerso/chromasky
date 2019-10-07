@@ -12,8 +12,7 @@ body {
   text-transform: uppercase;
   color: white;
   text-shadow: 2px 2px 4px #000000;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/background.png");
-  background-size: 25%;
+  background-color: black;
 }
 
 .form-page {

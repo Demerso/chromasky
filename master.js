@@ -12,7 +12,7 @@ $(document).ready(function()
         transition: 'fade',
         preloadImage: true,
         shuffle: true,
-        delay: 10000,
+        delay: 5000,
         animation: 'kenburns',
         timer: false
     });

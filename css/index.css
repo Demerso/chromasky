@@ -1,0 +1,63 @@
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  grid-gap: 20px;
+  width: 90%;
+  max-height: 0.9vh;
+}
+
+.button {
+  position: relative;
+  padding-top: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: table-cell;
+  cursor: pointer;
+  background-image: url("../img/stone.png");
+  background-size: 100% 100%;
+  transition: background-image 0.5s linear;
+  -webkit-transition: background-image 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.iron:hover { background-image: url("../img/iron_ore.png"); }
+.gold:hover { background-image: url("../img/gold_ore.png"); }
+.diamond:hover { background-image: url("../img/diamond_ore.png"); }
+.redstone:hover { background-image: url("../img/redstone_ore.png"); }
+
+.button .content {
+  font-size: 1.4em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1060px) {
+  .menu-grid {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+    grid-row-gap: 0px;
+    grid-column-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu-grid {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: auto;
+    grid-gap: 0px;
+  }
+  .button {
+    margin-bottom: 20px;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .title {
+    font-size: 2em;
+  }
+}

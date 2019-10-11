@@ -22,6 +22,7 @@
   background-size: cover;
   border: solid 5px white;
   transition: 0.3s ease-in-out;
+  text-align: center;
 }
 
 .link:hover {

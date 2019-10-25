@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Righteous&display=swap");
+html {
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -o-pixelated;
+      image-rendering: pixelated;
+  font-family: "Righteous", cursive;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  background-color: black;
+}
+
+body header .title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 0px;
+  width: 90%;
+  font-size: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-image: url("../img/stone.png");
+  background-size: contain;
+}
+
+body header #menu {
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+body header #menu .button {
+  margin: 10px;
+  cursor: pointer;
+  font-size: 1.4em;
+  -webkit-transition: background-image 0.3s ease-in-out;
+  transition: background-image 0.3s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-image: url("../img/stone.png");
+  background-size: contain;
+}
+/*# sourceMappingURL=styles.css.map */

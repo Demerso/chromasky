@@ -1,0 +1,17 @@
+@mixin center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+@mixin stoneBack {
+  background-image: url("../img/stone.png");
+  background-size: contain;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

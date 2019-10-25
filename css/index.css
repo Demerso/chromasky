@@ -31,10 +31,18 @@
   margin-bottom: 20px;
 }
 
-.iron:hover { background-image: url("../img/iron_ore.png"); }
-.gold:hover { background-image: url("../img/gold_ore.png"); }
-.diamond:hover { background-image: url("../img/diamond_ore.png"); }
-.redstone:hover { background-image: url("../img/redstone_ore.png"); }
+.iron:hover {
+  background-image: url("../img/iron_ore.png");
+}
+.gold:hover {
+  background-image: url("../img/gold_ore.png");
+}
+.diamond:hover {
+  background-image: url("../img/diamond_ore.png");
+}
+.redstone:hover {
+  background-image: url("../img/redstone_ore.png");
+}
 
 .button .content {
   font-size: 1.4em;

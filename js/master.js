@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function(event) {
   makeSquares("#menu");
 
   $("#menu")
@@ -8,7 +8,23 @@ $(document).ready(function() {
     })
     .mouseleave(function(event) {
       changeBack("leave", this);
-    }); //
+    });
+
+  $("#btnForm").click(function(event) {
+    goToAnchor("form");
+  });
+
+  $("#brnRules").click(function(event) {
+    goToAnchor("rules");
+  });
+
+  $("#btnPg").click(function(event) {
+    window.open("https://www.facebook.com/memestraduitsqc/");
+  });
+
+  $("#btnDon").click(function(event) {
+    goToAnchor("don");
+  });
 
   $("body").vegas({
     slides: [
@@ -29,7 +45,7 @@ $(document).ready(function() {
   });
 });
 
-$(window).resize(function() {
+$(window).resize(function(event) {
   makeSquares("#menu");
 });
 
@@ -37,6 +53,10 @@ function makeSquares(id) {
   var width = $(id)
     .children()
     .css("width");
+  width = Math.floor(parseFloat(width));
+  $(id)
+    .children()
+    .css("width", width);
   $(id)
     .children()
     .css("height", width);
@@ -52,4 +72,9 @@ function changeBack(state, element) {
   } else {
     $(element).css("background-image", "url(img/stone.png)");
   }
+}
+
+function goToAnchor(anchor) {
+  var loc = document.location.toString().split("#")[0];
+  document.location = loc + "#" + anchor;
 }

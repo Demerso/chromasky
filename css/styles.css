@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Righteous&display=swap");
 html {
-  image-rendering: auto;
   image-rendering: crisp-edges;
   -ms-interpolation-mode: nearest-neighbor;
       image-rendering: -webkit-optimize-contrast;
@@ -14,7 +13,12 @@ html {
   background-color: black;
 }
 
-body header .title {
+body > div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.title {
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px 0px;
@@ -27,7 +31,7 @@ body header .title {
   background-size: contain;
 }
 
-body header #menu {
+#menu {
   width: 90%;
   display: -ms-grid;
   display: grid;
@@ -38,10 +42,11 @@ body header #menu {
   text-align: center;
 }
 
-body header #menu .button {
+#menu .button {
+  padding: 5px;
   margin: 10px;
   cursor: pointer;
-  font-size: 1.4em;
+  font-size: 1.5em;
   -webkit-transition: background-image 0.3s ease-in-out;
   transition: background-image 0.3s ease-in-out;
   display: -webkit-box;
@@ -56,5 +61,42 @@ body header #menu .button {
   text-align: center;
   background-image: url("../img/stone.png");
   background-size: contain;
+}
+
+#form {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#form iframe {
+  margin: 20px;
+  border: none;
+  width: 700px;
+  height: 500px;
+}
+
+@media screen and (max-width: 850px) {
+  #menu {
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    -ms-grid-rows: (1fr)[2] !important;
+        grid-template-rows: repeat(2, 1fr) !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .title {
+    font-size: 2em !important;
+  }
+  #menu .button {
+    font-size: 1em !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #form iframe {
+    width: 90% !important;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

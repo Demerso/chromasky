@@ -73,7 +73,76 @@ body > div {
   margin: 20px;
   border: none;
   width: 700px;
-  height: 500px;
+  height: 700px;
+}
+
+#rules .textbox {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-align: justify;
+  background-color: rgba(0, 0, 0, 0.314159);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px;
+}
+
+#don .textbox {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-align: justify;
+  background-color: rgba(0, 0, 0, 0.314159);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px;
+}
+
+#don .choices-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2, auto);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-row-gap: 0px;
+  grid-column-gap: 20px;
+}
+
+#don .choices-grid .choice {
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+#don .choices-grid .link {
+  cursor: pointer;
+  display: table;
+  padding: 15px;
+  font-size: 1.25em;
+  background-image: url("../img/stone.png");
+  background-size: contain;
+  border: solid 5px white;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+}
+
+#don .choices-grid .link:hover {
+  border: solid 5px black;
+}
+
+#don #carte iframe {
+  height: 1000px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 @media screen and (max-width: 850px) {

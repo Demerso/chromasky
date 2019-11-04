@@ -1,28 +1,28 @@
-$(document).ready(function(event) {
+$(document).ready(function() {
   makeSquares("#menu");
 
   $("#menu")
     .children()
-    .mouseenter(function(event) {
+    .mouseenter(function() {
       changeBack("enter", this);
     })
-    .mouseleave(function(event) {
+    .mouseleave(function() {
       changeBack("leave", this);
     });
 
-  $("#btnForm").click(function(event) {
+  $("#btnForm").click(function() {
     goToAnchor("form");
   });
 
-  $("#brnRules").click(function(event) {
+  $("#brnRules").click(function() {
     goToAnchor("rules");
   });
 
-  $("#btnPg").click(function(event) {
+  $("#btnPg").click(function() {
     window.open("https://www.facebook.com/memestraduitsqc/");
   });
 
-  $("#btnDon").click(function(event) {
+  $("#btnDon").click(function() {
     goToAnchor("don");
   });
 
@@ -45,7 +45,7 @@ $(document).ready(function(event) {
   });
 });
 
-$(window).resize(function(event) {
+$(window).resize(function() {
   makeSquares("#menu");
 });
 
@@ -53,7 +53,7 @@ function makeSquares(id) {
   var width = $(id)
     .children()
     .css("width");
-  width = Math.floor(parseFloat(width));
+  width = Math.floor(parseFloat(width)); // Floor because animations are blurry with floats
   $(id)
     .children()
     .css("width", width);

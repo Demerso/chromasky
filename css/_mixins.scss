@@ -15,3 +15,12 @@
   align-items: center;
   text-align: center;
 }
+
+@mixin textBox {
+  width: $width;
+  @include center;
+  text-align: justify;
+  background-color: rgba(0, 0, 0, 0.3141592);
+  box-sizing: border-box;
+  padding: 5px;
+}

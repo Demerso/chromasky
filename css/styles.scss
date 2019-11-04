@@ -51,7 +51,56 @@ body > div {
     margin: 20px;
     border: none;
     width: 700px;
-    height: 500px;
+    height: 700px;
+  }
+}
+
+#rules {
+  .textbox {
+    @include textBox;
+  }
+}
+
+#don {
+  .textbox {
+    @include textBox;
+  }
+  .choices-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    align-items: center;
+    grid-row-gap: 0px;
+    grid-column-gap: 20px;
+
+    .choice {
+      text-align: center;
+      text-decoration: none;
+      margin-bottom: 5px;
+    }
+
+    .link {
+      cursor: pointer;
+      display: table;
+      padding: 15px;
+      font-size: 1.25em;
+      @include stoneBack;
+      border: solid 5px white;
+      transition: 0.3s ease-in-out;
+      text-align: center;
+
+      &:hover {
+        border: solid 5px black;
+      }
+    }
+  }
+
+  #carte {
+    iframe {
+      height: 1000px;
+      width: $width;
+      @include center;
+    }
   }
 }
 

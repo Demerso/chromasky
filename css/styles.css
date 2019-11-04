@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css?family=Righteous&display=swap");
+html {
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -o-pixelated;
+      image-rendering: pixelated;
+  font-family: "Righteous", cursive;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  background-color: black;
+}
+
+body > div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 0px;
+  width: 90%;
+  font-size: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-image: url("../img/stone.png");
+  background-size: contain;
+}
+
+#menu {
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#menu .button {
+  padding: 5px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 1.5em;
+  -webkit-transition: background-image 0.3s ease-in-out;
+  transition: background-image 0.3s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-image: url("../img/stone.png");
+  background-size: contain;
+}
+
+#form {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#form iframe {
+  margin: 20px;
+  border: none;
+  width: 700px;
+  height: 700px;
+}
+
+#rules .textbox {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-align: justify;
+  background-color: rgba(0, 0, 0, 0.314159);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px;
+}
+
+#don .textbox {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-align: justify;
+  background-color: rgba(0, 0, 0, 0.314159);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px;
+}
+
+#don .choices-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2, auto);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-row-gap: 0px;
+  grid-column-gap: 20px;
+}
+
+#don .choices-grid .choice {
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+#don .choices-grid .link {
+  cursor: pointer;
+  display: table;
+  padding: 15px;
+  font-size: 1.25em;
+  background-image: url("../img/stone.png");
+  background-size: contain;
+  border: solid 5px white;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+}
+
+#don .choices-grid .link:hover {
+  border: solid 5px black;
+}
+
+#don #carte iframe {
+  height: 1000px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+  #menu {
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    -ms-grid-rows: (1fr)[2] !important;
+        grid-template-rows: repeat(2, 1fr) !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .title {
+    font-size: 2em !important;
+  }
+  #menu .button {
+    font-size: 1em !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #form iframe {
+    width: 90% !important;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -8,6 +8,12 @@ $(document).ready(function() {
     })
     .mouseleave(function() {
       changeBack("leave", this);
+    })
+    .on('touchstart', function() {
+      changeBack("enter", this);
+    })
+    .on('touchend', function() {
+      changeBack("leave", this);
     });
 
   $("#btnForm").click(function() {

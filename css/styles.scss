@@ -94,13 +94,15 @@ body > div {
       }
     }
   }
+}
 
-  #carte {
-    iframe {
-      height: 1000px;
-      width: $width;
-      @include center;
-    }
+#carte {
+  #map {
+    border: none;
+    height: 500px;
+    width: $width;
+    display: block;
+    @include center;
   }
 }
 
